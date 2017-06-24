@@ -8,6 +8,7 @@ hosts = {
 
 Vagrant.configure('2') do |config|
   config.vm.box = 'ubuntu/trusty64'
+  config.vm.box_check_update = false
   # Default is 2200..something, but port 2200 is used by forescout NAC agent.
   config.vm.usable_port_range = 3800..3900
 
